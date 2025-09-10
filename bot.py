@@ -6,8 +6,8 @@ import requests
 
 from config import CONFIG
 
-BOT_TOKEN = "7446284006:AAGoq3Lh-aIw__XuQ4hNuaFuLD6Z220I2xo"
-API_URL = "http://localhost:8000"
+BOT_TOKEN = CONFIG[token]
+API_URL = CONFIG[backend_api]
 
 SELECTING_ACTION, SELECTING_LINE, SELECTING_STATION, SELECTING_END_STATION = range(4)
 
